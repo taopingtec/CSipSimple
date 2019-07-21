@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+//    compileSdkVersion 15
+//    buildToolsVersion "28.0.2"
+//    compileSdkVersion 22
+    compileSdkVersion 16
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.csipsimple"
+        minSdkVersion 14
+//        targetSdkVersion 15
+//        targetSdkVersion 22
+        targetSdkVersion 16
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+//    implementation 'com.actionbarsherlock:library:4.1.0'
+//    compile 'com.android.support:support-v4:27.1.1'
+    compile project(':actionbarsherlock410')
+}
