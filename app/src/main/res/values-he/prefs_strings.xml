@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <string name="prefs">הגדרות</string>
   <string name="prefs_fast">הגדרה מהירה</string>

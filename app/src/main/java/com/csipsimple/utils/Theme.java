@@ -41,7 +41,6 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.internal.utils.UtilityWrapper;
 import com.csipsimple.R;
 import com.csipsimple.api.SipConfigManager;
 import com.csipsimple.api.SipManager;
@@ -142,7 +141,9 @@ public class Theme {
 	public void applyBackgroundDrawable(View button, String res) {
 		Drawable d = getDrawableResource(res);
 		if(d != null) {
-		    UtilityWrapper.getInstance().setBackgroundDrawable(button, d);
+		   // UtilityWrapper.getInstance().setBackgroundDrawable(button, d);
+		   // change tqc
+            button.setBackground(d);
 		}
 	}
 	
@@ -178,7 +179,9 @@ public class Theme {
         }
         
         if(std != null) {
-            UtilityWrapper.getInstance().setBackgroundDrawable(v, std);
+           // UtilityWrapper.getInstance().setBackgroundDrawable(v, std);
+           //change tqc
+            v.setBackgroundDrawable(std);
         }
     }
     
@@ -201,7 +204,8 @@ public class Theme {
         }
         
         if(std != null) {
-            UtilityWrapper.getInstance().setBackgroundDrawable(v, std);
+            //UtilityWrapper.getInstance().setBackgroundDrawable(v, std);
+            v.setBackgroundDrawable(std);
         }
     }
     

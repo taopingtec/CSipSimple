@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <string name="optional_sip_code">Valfri SIP-kod</string>
   <string name="cant_call">Kan inte ringa</string>

@@ -25,7 +25,7 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!--
-    <uses-permission android:name="android.permission.CALL_PRIVILEGED" /> 
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
     was useless anyway as only granted to system app and
     we don't have core integration anymore with these plugins
     -->
@@ -43,8 +43,8 @@
     <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
     <!--
     Not taken into account?
-    Regarding Diane's comment this was never implemented 
-    and was dropped in most recent android versions 
+    Regarding Diane's comment this was never implemented
+    and was dropped in most recent android versions
     <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
     -->
 

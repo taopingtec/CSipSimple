@@ -31,7 +31,7 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import com.actionbarsherlock.internal.utils.UtilityWrapper;
+
 import com.csipsimple.R;
 
 import java.lang.reflect.Method;
@@ -181,7 +181,13 @@ public class DigitsEditText extends EditText {
     
     private void reflexSetShowSoftInputOnFocus(boolean show) {
         if(showSoftInputOnFocus != null) {
-            UtilityWrapper.safelyInvokeMethod(showSoftInputOnFocus, this, show);
+           // UtilityWrapper.safelyInvokeMethod(showSoftInputOnFocus, this, show);
+            try {
+                showSoftInputOnFocus.invoke(this,show);
+            }catch (Exception e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 }

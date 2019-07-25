@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <string name="w_callcentric_phone_number">លេខ​ទូរស័ព្ទ SIP</string>
   <string name="w_callcentric_phone_number_desc">លេខ​ទូរស័ព្ទ Callcentric SIP (1777xxxxxxx)</string>

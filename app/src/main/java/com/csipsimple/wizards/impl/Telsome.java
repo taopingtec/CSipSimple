@@ -26,7 +26,7 @@ public class Telsome extends SimpleImplementation {
 
 	@Override
 	protected String getDomain() {
-		return "sip.telsome.es";
+		return "sip.telsome.com";
 	}
 	
 	@Override

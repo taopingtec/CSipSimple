@@ -38,7 +38,7 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
 
-import com.actionbarsherlock.internal.utils.UtilityWrapper;
+
 import com.csipsimple.R;
 import com.csipsimple.ui.incall.locker.IOnLeftRightChoice;
 import com.csipsimple.ui.incall.locker.IOnLeftRightChoice.IOnLeftRightProvider;
@@ -159,11 +159,15 @@ public class SlidingTab extends ViewGroup implements IOnLeftRightProvider {
 			if(iconD != null) {
 				tab.setImageDrawable(iconD);
 			}
+            //change tqc
 			if(tabD != null) {
-			    UtilityWrapper.getInstance().setBackgroundDrawable(tab, tabD);
+			    //UtilityWrapper.getInstance().setBackgroundDrawable(tab, tabD);
+                tab.setBackgroundDrawable(tabD);
+
 			}
 			if(barD != null) {
-			    UtilityWrapper.getInstance().setBackgroundDrawable(text, barD);
+			   // UtilityWrapper.getInstance().setBackgroundDrawable(text, barD);
+                text.setBackgroundDrawable(barD);
 			}
 			if(tabD != null) {
 				target.setImageDrawable(targetD);

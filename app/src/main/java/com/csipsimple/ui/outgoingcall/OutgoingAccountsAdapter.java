@@ -29,7 +29,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.internal.utils.UtilityWrapper;
+
 import com.csipsimple.R;
 import com.csipsimple.api.SipProfile;
 import com.csipsimple.ui.account.AccountsLoader;
@@ -146,7 +146,17 @@ public class OutgoingAccountsAdapter extends ResourceCursorAdapter {
                 }
             }
             if(setAlphaMethod != null) {
-                UtilityWrapper.safelyInvokeMethod(setAlphaMethod, v, alpha);
+                //UtilityWrapper.safelyInvokeMethod(setAlphaMethod, v, alpha);
+                //change tqc
+                try
+                {
+                    setAlphaMethod.invoke(v, alpha);
+                }catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
+
+
             }
         }else {
             // Try to set alpha on each component

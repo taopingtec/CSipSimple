@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
   <string name="acct_inactive">인액티브 상태</string>
   <string name="acct_unregistered">미등록 상태</string>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <string name="w_onsip_authentication_name">Nazwa użytkownika uwierzytelnienia</string>
   <string name="w_onsip_authentication_name_desc">Uwierzytelnienie użytkownika SIP</string>

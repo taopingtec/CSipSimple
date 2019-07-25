@@ -22,7 +22,8 @@
         <item name="android:layout_height">68dip</item>
     </style>
 
-    <style name="TextAppearance.SlidingTabNormal" parent="@android:style/textAppearanceMedium">
+    <!--<style name="TextAppearance.SlidingTabNormal" parent="@android:attr/textAppearanceMedium">-->
+    <style name="TextAppearance.SlidingTabNormal" parent="@style/TextAppearance.AppCompat.Medium">
         <item name="android:textColor">?android:attr/textColorTertiary</item>
         <item name="android:textSize">28sp</item>
         <item name="android:shadowDx">0.0</item>
@@ -31,7 +32,8 @@
         <item name="android:shadowColor">@android:color/black</item>
     </style>
 
-    <style name="TextAppearance.SlidingTabActive" parent="@android:style/textAppearanceMedium">
+    <!--<style name="TextAppearance.SlidingTabActive" parent="@android:attr/textAppearanceMedium">-->
+    <style name="TextAppearance.SlidingTabActive" parent="@style/TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">28sp</item>
     </style>
@@ -76,7 +78,7 @@
 
     <style name="DarkTheme" parent="Theme.Sherlock"></style>
 
-    <style name="DarkTheme.Dialog" parent="Theme.Sherlock.Dialog">
+    <style name="DarkTheme.Dialog" parent="Theme.Sherlock.Light.DarkActionBar">
 
         <!-- TODO : use android:attr on 11 -->
         <item name="actionBarItemBackground">@drawable/abs__item_background_holo_dark</item>

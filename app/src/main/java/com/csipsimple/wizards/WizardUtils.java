@@ -421,10 +421,6 @@ public class WizardUtils {
                     R.drawable.ic_wizard_alonia, 30, 
                     new Locale[]{ }, false, true, 
                     Alonia.class));
-            WIZARDS_DICT.put("VOIP2GO", new WizardInfo("VOIP2GO", "voip2go", 
-                    R.drawable.ic_wizard_voip2go, 30, 
-                    new Locale[]{ }, false, true, 
-                    Voip2go.class));
             
 			
 			//Locales
@@ -1162,18 +1158,6 @@ public class WizardUtils {
                     R.drawable.ic_wizard_telefonet, 19, 
                     new Locale[]{new Locale("PT", "br")}, false, false, 
                     Telefonet.class));
-            WIZARDS_DICT.put("DIALSPORATEL", new WizardInfo("DIALSPORATEL", "Dialsporatel", 
-                    R.drawable.ic_wizard_dialspora, 20, 
-                    new Locale[]{ Locale.UK }, false, false, 
-                    DialsporaTel.class));
-            WIZARDS_DICT.put("AVANVOIP", new WizardInfo("AVANVOIP", "AVANVOIP", 
-                    R.drawable.ic_wizard_avanvoip, 20, 
-                    new Locale[]{ new Locale("ES", "es") }, false, false, 
-                    AVANVOIP.class));
-            WIZARDS_DICT.put("SOLIDVOICE", new WizardInfo("SOLIDVOICE", "solidvoice", 
-                    R.drawable.ic_wizard_solidvoice, 30, 
-                    new Locale[]{ Locale.US, new Locale("EN", "cm")}, false, false, 
-                    SolidVoice.class));
             
 		}else {
 			WizardInfo info = CustomDistribution.getCustomDistributionWizard();

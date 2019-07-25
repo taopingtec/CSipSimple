@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools">
   <string name="w_sipgate_display_name">Nom du compte</string>
   <string name="w_sipgate_display_name_desc" tools:ignore="UnusedResources">Nom d\'affichage de ce compte</string>

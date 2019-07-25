@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <string name="w_basic_username">អ្នក​ប្រើ</string>
   <string name="w_basic_username_desc">ឈ្មោះ​​គណនី / ចូល (កុំ​សរសេរ @sip.server)</string>

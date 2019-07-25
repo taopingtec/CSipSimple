@@ -41,13 +41,13 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.actionbarsherlock.internal.utils.UtilityWrapper;
 import com.actionbarsherlock.internal.view.menu.ActionMenuPresenter;
 import com.actionbarsherlock.internal.view.menu.ActionMenuView;
 import com.actionbarsherlock.internal.view.menu.MenuBuilder;
 import com.actionbarsherlock.internal.view.menu.MenuBuilder.Callback;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.csipsimple.CsipSampleConstant;
 import com.csipsimple.R;
 import com.csipsimple.api.SipCallSession;
 import com.csipsimple.api.SipCallSession.MediaState;
@@ -111,6 +111,8 @@ public class InCallCard extends FrameLayout implements OnClickListener, Callback
         initControllerView();
         
         incallPlugins = ExtraPlugins.getDynActivityPlugins(context, SipManager.ACTION_INCALL_PLUGIN);
+
+        Log.i(CsipSampleConstant.TAG, "Calllllllll----------------1111");
     }
 
     private void initControllerView() {
@@ -157,7 +159,9 @@ public class InCallCard extends FrameLayout implements OnClickListener, Callback
             // Use width limit (this means we don't care item limits 
             mActionMenuPresenter.setItemLimit(20);
             ActionMenuView menuView = (ActionMenuView) mActionMenuPresenter.getMenuView(menuViewWrapper);
-            UtilityWrapper.getInstance().setBackgroundDrawable(menuView, null);
+            //UtilityWrapper.getInstance().setBackgroundDrawable(menuView, null);
+            //change tqc
+            menuView.setBackgroundDrawable(null);
             menuViewWrapper.addView(menuView, layoutParams);
             added = true;
         }else {
@@ -265,11 +269,11 @@ public class InCallCard extends FrameLayout implements OnClickListener, Callback
                 Log.d(THIS_FILE, "Current ratio is " + currentRatio);
                 if(currentRatio < minRatio) {
                     newHeight = w / minRatio;
-                    int padding = (int) FloatMath.floor((h - newHeight) /2);
+                    int padding = (int) (float)Math.floor((h - newHeight) /2);
                     setPadding(0, padding, 0, padding);
                 }else if(currentRatio > maxRatio) {
                     newWidth = h * maxRatio;
-                    int padding = (int) FloatMath.floor((w - newWidth) /2);
+                    int padding = (int) (float)Math.floor((w - newWidth) /2);
                     setPadding(padding, 0, padding, 0);
                 }else {
                     setPadding(0, 0, 0, 0);
